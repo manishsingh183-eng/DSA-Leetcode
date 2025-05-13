@@ -3,7 +3,13 @@ class Solution {
         int pivot = pivot(nums);
 
         if (pivot == -1) {
-            return bsearch(nums, target, 0, nums.length - 1) != -1;
+            int index = bsearch(nums, target, 0, nums.length - 1);
+            if (index != -1) {
+                return true;
+                } 
+            else {
+                return false;
+                }
         }
 
         if (nums[pivot] == target) {
