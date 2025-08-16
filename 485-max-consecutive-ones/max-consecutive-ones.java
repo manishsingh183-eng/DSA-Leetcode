@@ -5,10 +5,9 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             if(nums[i]==1){
                 count++;
-                // if(maxcount<count){
-                //     maxcount=count;
-                // }
-                maxcount=Math.max(maxcount,count);
+                if(maxcount<count){
+                    maxcount=count;
+                }
             }
             else{
                 count=0;
