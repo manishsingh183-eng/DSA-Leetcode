@@ -5,14 +5,18 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             if(nums[i]==1){
                 count++;
-                if(maxcount<count){
-                    maxcount=count;
-                }
+                // if(maxcount<count){
+                //     maxcount=count;
+                // }
             }
             else{
+                // if(maxcount<count){
+                //     maxcount=count;
+                // }
+                maxcount=Math.max(maxcount,count);
                 count=0;
             }
     }
-    return maxcount;
+    return  maxcount=Math.max(maxcount,count);
     }
 }
