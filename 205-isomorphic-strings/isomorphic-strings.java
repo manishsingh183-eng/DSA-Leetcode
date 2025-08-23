@@ -16,7 +16,6 @@ class Solution {
                 mapST.put(c1, c2);
             }
 
-            // check t->s mapping
             if (mapTS.containsKey(c2)) {
                 if (mapTS.get(c2) != c1) return false;
             } else {
